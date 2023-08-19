@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+    scroll-behavior: smooth;
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #fbfbfb;
+    font-weight: bold; 
+}
+
+header  {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 1000;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+
+.menu { 
+  
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+     
+}
+
+    
+
+.menu li {
+ 
+    margin-right:60px;
+    
+        
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    
+}
+
+
+ul {
+    
+    list-style: none;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+    max-width: 1200px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 20px;
+    color: #0f0f0f;
+    line-height: 1.2;
+    padding-top: 90px;
+}
+
+p {
+    padding: 20px 0 20px 0;
+}
+
+section#inicio{
+    
+    min-height: 100vh;
+      
+}
+
+.foto {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 100%;
+    padding: 10px 0 0 0; 
+    
+}
+h1 {
+    font-size: 36px;
+}
+
+h2, h3 {
+    font-size: 28px;
+}
+
+button {
+    border: none;
+    padding: 15px 20px;
+    background-color: #af599e;
+    cursor: pointer;
+    border-radius: 40px;
+    color: #fbfbfb;
+    font-size: 20px;
+   
+  }
+section#contacto {
+    padding: 200px 0 0 0; 
+    /*min-height: 100vh;*/ 
+      
+  
+}
+#colorfondo {
+    background-color: rgba(175, 89, 158, 0.3);
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+article {
+    padding: 20px 0;
+}
+.menu2 {
+    display: flex;
+    margin: 0;
+    padding: 60px 20px;
+    justify-content: space-around;
+}
+nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+img.redes {
+    width: 80px;
+    height: 80px;
+    
+}
+
+footer {
+    display: flex;
+    justify-content:space-evenly;
+
+    height: 90px;
+    background-color: #af599e;
+    align-items: center;  
+    
+    
+}
+
