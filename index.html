@@ -14,9 +14,9 @@
     
          <img class="logo" src="./img/logoME.jpg" alt="mi logo">
          <nav>
-            <ul class="menu">
-                <li> <a href="#inicio">Inicio</a></li>          
-                <li> <a href="#contacto">Contacto</a></li>
+            <ul id="menu">
+                <li class="menu-item"> <a href="#inicio">Inicio</a></li>          
+                <li class="menu-item"> <a href="#contacto">Contacto</a></li>
             </ul>  
          </nav>
          
@@ -24,17 +24,19 @@
     <main>
         <section id="inicio">
     
-            <figure>
-                <img class="foto" src="./img/FOTOmej.jpg" alt="mi foto">
+            <figure class="foto">
+                <img src="./img/FOTOmej.jpg" alt="mi foto">
             </figure>
-            <article>
-                <h1>Hola! Soy Maria</h1>
+            <article class="presentacion">
+                <h1>Hola! Soy Maria Elena</h1>
                 <p>
                 He incursionado en el mundo de la Informática a lo largo de mi carrera, pasando por diferentes etapas de crecimiento profesional, lo que me ha permitido adquirir conocimientos en el ámbito de las Tecnologías de Información y Comunicación. Estoy enfocada en seguir aprendiendo y enfrentar nuevos desafíos.
            
                 </p>
-            <a href="./img/cvME.pdf"   class="botondescargar" target="_blank">
-            <button type="button" id="miBoton">Descargar mi CV</button> </a>      
+            <!--<a href="./img/cvME.pdf"   class="botondescargar" target="_blank">
+            <button type="button" id="miBoton">Descargar mi CV</button> </a>   -->   
+
+            <a href="./img/cvME.pdf" aria-label="Descargar CV" class="botondescargar" target="_blank">Descargar mi CV</a>
 
             </article>   
      
@@ -65,7 +67,6 @@
     
     <footer>
         <h4>María Parra</h4>
-        <h4>Código latam</h4>
     </footer>
     
 </body>
