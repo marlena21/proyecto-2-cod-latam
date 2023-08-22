@@ -127,6 +127,9 @@ figure.foto img {
     border-radius: 50%;
     width: 350px;
 }
+.foto:hover {filter: opacity(.5);}
+
+
 h1 {
     font-size: 32px;
     text-align: center;
@@ -155,6 +158,11 @@ a.botondescargar {
    
   }
 
+  a:hover {
+    color: #1717FF;
+    cursor: pointer;
+  }
+
 section#contacto {
     padding: 200px 20px 10px; 
     /*min-height: 100vh;*/
@@ -175,12 +183,15 @@ section#contacto {
     padding: 60px 20px;
     justify-content: space-around;
 }
-nav ul li{
+ul li.redes{
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-around;
 }
+
+
+ 
 
 img.redes {
     width: 80px;
@@ -193,9 +204,8 @@ img.redes {
 footer {
     height: 90px;
     display: flex;
-
-    justify-content:center;
-  
+    justify-content:space-around;
+    align-items: center;
     background-color: #af599e;
     color: #fbfbfb;
      
@@ -204,16 +214,41 @@ footer {
 
 
 @media (min-width: 1024px) {
+    body {
+        background-color: #e1e1f3;
+    }
     section#inicio{
         flex-direction: row;
     }
     article.presentacion{
         text-align: left;
         width: 50%;
+     
     }
     h1 {
         font-size: 48px;
         text-align: left;
     }
+    h2 {
+        font-size: 32px;
+    }
+    article#colorfondo{
+        width: 50%;
+        background-color: #1717FF;
+        color: white;
+    }
+    footer, a.botondescargar, header {
+        background-color: #1717FF;
+        
+     
+    }
+    .menu li a, li.menu-item a{
+        color: white;
+    }
+    a.botondescarga{
+        filter: invert(100%);
+        transition: background-color 0.3s;
+    }
+        
 
 }
